@@ -8,6 +8,7 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(140deg, rgba(21,15,113,1) 0%, rgba(143,12,12,1) 49%, rgba(21,15,113,1) 100%) no-repeat;
+    min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p, i, b, strong, small {
@@ -50,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features p {
+    font-family: 'DM Sans', sans-serif;
     font-size: 20px;
 }
 
@@ -65,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-menu {
     padding: 0;
     list-style-type: none;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .fa-brands {
