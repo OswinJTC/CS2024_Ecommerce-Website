@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | TRAC Watches and Fitness Trackers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- manual scripts below here -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    
+    <!-- manual scripts end here -->
+</head>
+</head>
+
+<body>
+
+    <div id="header-navbar" class="bg-mode-darken">
+        <div class="container">
+            <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
+                <ul class="nav col-md-auto mb-4 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-3">Home</a></li>
+                    <li><a href="#" class="nav-link px-3">About</a></li>
+                    <li><a href="#" class="nav-link px-3">Products</a></li>
+                    <li><a href="#" class="nav-link px-3">Our App</a></li>
+                    <li><a href="#" class="nav-link px-3">Contact</a></li>
+                    <li><a href="#" class="nav-link px-3">FAQ</a></li>
+                    <li><a href="#" class="nav-link px-3">Support</a></li>
+                </ul>
+                <div class="col-md-3 text-end mb-md-0">
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                </div> 
+            </header>
+        </div>
+    </div>
+
+    <div class="py-5 text-center">
+        <h1 class="text-center">Forerunner 55 Series</h1>
+    </div>
+
+
+    <!-- Product Order Section -->
+    <div class="container pb-5">
+        <div class="row align-items-center bg-mode-darken py-4">
+            <div class="col-md-6 product1-order-image">
+                <img src="images/garmin-test.jpeg">
+            </div>
+            <div class="col-md-6 product1-order-info">
+                <h2 style="margin-bottom: 40px;">Forerunner 55</h2>
+                <h3 style="margin-bottom: 40px;">SGD 309</h3>
+                
+                <div class="form-group my-3" >
+                    <label class="label-text" for="colorSelect">
+                        <h4>Colour</h4>
+                    </label>
+                    <select class="form-select rectangular-form" id="colorSelect" style="width: 250px; height: 50px; margin-bottom: 40px;">
+                        <option selected>Choose color</option>
+                        <option value="1">Black</option>
+                        <option value="2">Gray</option>
+                    </select>
+                </div>
+
+                <div class="form-group my-3">
+                    <label class="label-text" for="quantitySelect">
+                        <h4>Quantity</h4>
+                    </label>
+                    <div class="form-group" style="width: 250px; height: 50px; background-color: white; border: 1px solid #ced4da; border-radius: 5px; display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px;">
+                        <button class="rectangular-button" style="width: 30px; border: none; background-color: transparent;">-</button>
+                        <span id="quantity" style="padding: 0 10px;">1</span>
+                        <button class="rectangular-button" style="width: 30px; border: none; background-color: transparent;">+</button>
+                    </div>
+       
+                </div>
+
+                <button class="btn btn-primary" style=" border-radius: 5px; width: 250px; height: 50px;">Add to Cart</button>
+
+            </div>
+            
+        </div>
+    </div>
+ 
+
+    <!-- Product Description Section -->
+    <div class="container py-5">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1 style="margin-top: 25px;">Connect to Your Favourite Music App</h1>
+                <p style="font-size: 23px;  margin-top: 50px;">Spotify has always been available on your phone, your computer and your tablet. Now you can get it on your compatible Garmin watch with Spotify Premium.</p>
+                <p style="font-size: 23px;">There are millions of tracks on Spotify, so the right music is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you. You can also browse through the music collections of friends, artists and celebrities, or create a radio station and just sit back.</p>
+            </div>
+        
+            <div class="col-md-4">
+                <img src="images/spotify.png" width="100%" alt="Spotify">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="pt-5 text-center">
+        <h1 class="text-center">Features</h1>
+    </div>
+
+
+    <!-- Product Features Section -->
+    <div class="container">
+        <div class="row align-items-center" style="margin-top: 50px;">
+            <div class="col-md-4 text-center">
+                
+                <img src="images/location.png" alt="Location Icon">
+                <p>Track pace, distance and more with built-in GPS.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/battery.png" alt="Battery Icon">
+                <p>Get up to 2 weeks of battery life. Because less charging is always a good thing.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/health.png" alt="Health Icon">
+                <p>Monitor your overall health and wellness.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5 text-center">
+        <h1 class="text-center">Specifications</h1>
+    </div>
+
+ 
+
+<div id="header-navbar" class="bg-mode-darken">
+    <div class="container">
+        <div class="d-flex flex-wrap bg align-items-start justify-content-between justify-content-md-between pt-5 pb-3">
+            <div class="col-md-5">
+                <div class="row g-0">
+                    <div class="col-md">
+                        <h5>TRAC.</h5>
+                        <ul class="footer-menu">
+                            <li><a class="nav-link pt-2" href="/">Home</a></li>
+                            <li><a class="nav-link pt-2" href="/">About Us</a></li>
+                            <li><a class="nav-link pt-2" href="/">Products</a></li>
+                            <li><a class="nav-link pt-2" href="/">Our App</a></li>
+                            <li><a class="nav-link pt-2" href="/">Privacy Policy</a></li>
+                        </ul> 
+                    </div>
+                    <div class="col-md">
+                        <h5>Support</h5>
+                        <ul class="footer-menu">
+                            <li><a class="nav-link pt-2" href="/">FAQ</a></li>
+                            <li><a class="nav-link pt-2" href="/">Returns & Refunds</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <h5>Contact Us</h5>
+                        <ul class="footer-menu">
+                            <li class="pt-2">
+                                <h6>Phone</h6>
+                                <p>+65 8888 8888</p>
+                            </li>
+                            <li class="pt-2">
+                                <h6>Email</h6>
+                                <p>contact@trac.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mb-md-0">
+                <h5>Stay in touch with us!</h5>
+                <p>Receive discounts and latest news about our products.</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="submit">
+                    <button class="btn btn-outline-primary" type="button" id="submit">Submit</button>
+                </div>
+                <div class="pt-2">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div> 
+        </div>
+        <div class="text-center pb-3">
+            <small>Copyright &copy; 2023 TRAC. All Rights Reserved.</small>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

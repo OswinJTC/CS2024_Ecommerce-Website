@@ -73,3 +73,34 @@ h1, h2, h3, h4, h5, h6 {
 .fa-brands {
     font-size: 32px;
 }
+
+.product1-order-image {
+    padding-left: 80px; 
+}
+
+.product1-order-info{
+    padding-left: 80px; 
+
+}
+
+
+.label-text {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.rectangular-form {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.add-to-cart-button {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
