@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(140deg, rgba(21,15,113,1) 0%, rgba(143,12,12,1) 49%, rgba(21,15,113,1) 100%) no-repeat;
+    background: linear-gradient(170deg, rgba(21,15,113,1) 5%, rgba(143,12,12,1) 50%, rgba(21,15,113,1) 95%) no-repeat;
     min-height: 100%;
 }
 
@@ -33,8 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .eyecatch-text {
-    font-size: 56px;
+    font-size: 42px;
     font-weight: 700;
+}
+
+.eyecatch-desc {
+    font-weight: 300;
 }
 
 .bg-mode-darken {
@@ -47,16 +51,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features h1 {
-    font-size: 56px;
+    font-size: 52px;
 }
 
 .features p {
     font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .app-eyecatch {
-    line-height: 88px;
+    line-height: 56px;
 }
 
 .app-badge {
@@ -94,6 +99,22 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
+.spotify-text p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header-about {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.content-about .copy {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
 
 .add-to-cart-button {
     border-radius: 5px;
@@ -103,4 +124,3 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
     border: 1px solid #000000;
 }
-

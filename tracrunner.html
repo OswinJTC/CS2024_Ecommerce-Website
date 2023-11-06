@@ -15,9 +15,8 @@
     <!-- manual scripts below here -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/buttons.css">
-    
+    <script type="text/javascript" src="scripts/quantity_handler.js"></script>
     <!-- manual scripts end here -->
-</head>
 </head>
 
 <body>
@@ -27,8 +26,8 @@
             <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
                 <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
                 <ul class="nav col-md-auto mb-4 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-3">Home</a></li>
-                    <li><a href="#" class="nav-link px-3">About</a></li>
+                    <li><a href="index.html" class="nav-link px-3">Home</a></li>
+                    <li><a href="about.html" class="nav-link px-3">About</a></li>
                     <li><a href="products.html" class="nav-link px-3">Products</a></li>
                     <li><a href="#" class="nav-link px-3">Our App</a></li>
                     <li><a href="#" class="nav-link px-3">Contact</a></li>
@@ -43,44 +42,44 @@
     </div>
 
     <div class="py-5 text-center">
-        <h1 class="text-center">Forerunner 55 Series</h1>
+        <h1 class="text-center">TracRunner Series</h1>
     </div>
 
 
     <!-- Product Order Section -->
-    <div class="container pb-5" style="padding-left: 50px; padding-right: 50px; ">
-        <div class="row align-items-center bg-mode-darken py-4" style = "border-radius: 40px;">
+    <div class="container pb-5 px-5">
+        <div class="row align-items-center bg-mode-darken py-5 rounded-5">
             <div class="col-md-6 product1-order-image">
-                <img src="images/garmin-test.jpeg">
+                <img src="images/index-1.png">
             </div>
             <div class="col-md-6 product1-order-info">
-                <h2 style="margin-bottom: 40px;">Forerunner 55</h2>
-                <h3 style="margin-bottom: 40px;">SGD 309</h3>
+                <h2>TracRunner</h2>
+                <br />
+                <h3 class="mb-4">SGD 309</h3>
                 
-                <div class="form-group my-3" >
+                <div class="form-group my-2 pb-2" style="width: 250px">
                     <label class="label-text" for="colorSelect">
-                        <h4>Colour</h4>
+                        <h4>Color</h4>
                     </label>
-                    <select class="form-select rectangular-form" id="colorSelect" style="width: 250px; height: 50px; margin-bottom: 40px;">
+                    <select style="font-family: 'DM Sans', sans-serif;" class="form-select rectangular-for py-2" id="colorSelect" required>
                         <option selected>Choose color</option>
                         <option value="1">Black</option>
                         <option value="2">Gray</option>
                     </select>
                 </div>
 
-                <div class="form-group my-3">
+                <div class="form-group my-3 pt-2">
                     <label class="label-text" for="quantitySelect">
                         <h4>Quantity</h4>
                     </label>
-                    <div class="form-group" style="width: 250px; height: 50px; background-color: white; border: 1px solid #ced4da; border-radius: 5px; display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px;">
-                        <button class="rectangular-button" style="width: 30px; border: none; background-color: transparent;">-</button>
-                        <span id="quantity" style="padding: 0 10px;">1</span>
-                        <button class="rectangular-button" style="width: 30px; border: none; background-color: transparent;">+</button>
+                    <div class="qty-selector input-group">
+                        <button style="width: 50px;" class="btn btn-primary text-center p-2">-</button>
+                        <input id="quantity" name="quantity" class="border-0" style="text-align: center; width: 152px;" type="text" value="1" readonly>
+                        <button style="width: 50px;" class="btn btn-primary text-center p-2">+</button>
                     </div>
-       
                 </div>
 
-                <button class="btn btn-primary" style=" border-radius: 5px; width: 250px; height: 50px;">Add to Cart</button>
+                <button class="btn btn-primary" style="width: 250px">Add to Cart</button>
 
             </div>
             
@@ -89,20 +88,19 @@
  
 
     <!-- Product Description Section -->
-    <div class="container py-5" style = "padding-left: 50px; padding-right: 50px; ">
-
-        <div class="row">
-            <div class="col-md-8">
-                <h1 style="margin-top: 25px;">Connect to Your Favourite Music App</h1>
-                <p style="font-size: 23px;  margin-top: 50px;">Spotify has always been available on your phone, your computer and your tablet. Now you can get it on your compatible Garmin watch with Spotify Premium.</p>
-                <p style="font-size: 23px;">There are millions of tracks on Spotify, so the right music is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you. You can also browse through the music collections of friends, artists and celebrities, or create a radio station and just sit back.</p>
+    <div class="container p-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-8 spotify-text">
+                <h1 class="mt-4">Connect to Your Favourite Music App</h1>
+                <br />
+                <p>Spotify has always been available on your phone, your computer and your tablet. Now you can get it on your compatible Garmin watch with Spotify Premium.</p>
+                <p>There are millions of tracks on Spotify, so the right music is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you. You can also browse through the music collections of friends, artists and celebrities, or create a radio station and just sit back.</p>
             </div>
         
-            <div class="col-md-4">
+            <div class="col-md-4 text-right">
                 <img src="images/spotify.png" width="100%" alt="Spotify">
             </div>
         </div>
-
     </div>
 
 
@@ -112,19 +110,19 @@
 
 
     <!-- Product Features Section -->
-    <div class="container" style = "padding-left: 50px; padding-right: 50px; ">
-        <div class="row align-items-center" style="margin-top: 50px;">
-            <div class="col-md-4 text-center">
+    <div class="container px-5 mb-5 pb-5">
+        <div class="row align-items-top justify-content-between" style="margin-top: 50px;">
+            <div class="col-md-3 text-center">
                 
-                <img src="images/location.png" alt="Location Icon">
+                <img src="images/location.png" alt="Location Icon" width="50%">
                 <p>Track pace, distance and more with built-in GPS.</p>
             </div>
-            <div class="col-md-4 text-center">
-                <img src="images/battery.png" alt="Battery Icon">
+            <div class="col-md-3 text-center">
+                <img src="images/battery.png" alt="Battery Icon" width="50%">
                 <p>Get up to 2 weeks of battery life. Because less charging is always a good thing.</p>
             </div>
-            <div class="col-md-4 text-center">
-                <img src="images/health.png" alt="Health Icon">
+            <div class="col-md-3 text-center">
+                <img src="images/health.png" alt="Health Icon" width="50%">
                 <p>Monitor your overall health and wellness.</p>
             </div>
         </div>
@@ -264,69 +262,63 @@
                 </td>
             </tr>
         </table>
-    </div>
-    
-    
-    
-    
+    </div> 
 
- 
-
-<div id="header-navbar" class="bg-mode-darken">
-    <div class="container">
-        <div class="d-flex flex-wrap bg align-items-start justify-content-between justify-content-md-between pt-5 pb-3">
-            <div class="col-md-5">
-                <div class="row g-0">
-                    <div class="col-md">
-                        <h5>TRAC.</h5>
-                        <ul class="footer-menu">
-                            <li><a class="nav-link pt-2" href="/">Home</a></li>
-                            <li><a class="nav-link pt-2" href="/">About Us</a></li>
-                            <li><a class="nav-link pt-2" href="/">Products</a></li>
-                            <li><a class="nav-link pt-2" href="/">Our App</a></li>
-                            <li><a class="nav-link pt-2" href="/">Privacy Policy</a></li>
-                        </ul> 
-                    </div>
-                    <div class="col-md">
-                        <h5>Support</h5>
-                        <ul class="footer-menu">
-                            <li><a class="nav-link pt-2" href="/">FAQ</a></li>
-                            <li><a class="nav-link pt-2" href="/">Returns & Refunds</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md">
-                        <h5>Contact Us</h5>
-                        <ul class="footer-menu">
-                            <li class="pt-2">
-                                <h6>Phone</h6>
-                                <p>+65 8888 8888</p>
-                            </li>
-                            <li class="pt-2">
-                                <h6>Email</h6>
-                                <p>contact@trac.com</p>
-                            </li>
-                        </ul>
+    <div id="footer-navbar" class="bg-mode-darken">
+        <div class="container">
+            <div class="d-flex flex-wrap bg align-items-start justify-content-between justify-content-md-between pt-5 pb-3">
+                <div class="col-md-5">
+                    <div class="row g-0">
+                        <div class="col-md">
+                            <h5>TRAC.</h5>
+                            <ul class="footer-menu">
+                                <li><a class="nav-link pt-2" href="index.html">Home</a></li>
+                                <li><a class="nav-link pt-2" href="about.html">About Us</a></li>
+                                <li><a class="nav-link pt-2" href="products.html">Products</a></li>
+                                <li><a class="nav-link pt-2" href="/">Our App</a></li>
+                                <li><a class="nav-link pt-2" href="/">Privacy Policy</a></li>
+                            </ul> 
+                        </div>
+                        <div class="col-md">
+                            <h5>Support</h5>
+                            <ul class="footer-menu">
+                                <li><a class="nav-link pt-2" href="/">FAQ</a></li>
+                                <li><a class="nav-link pt-2" href="/">Returns & Refunds</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <h5>Contact Us</h5>
+                            <ul class="footer-menu">
+                                <li class="pt-2">
+                                    <h6>Phone</h6>
+                                    <p>+65 8888 8888</p>
+                                </li>
+                                <li class="pt-2">
+                                    <h6>Email</h6>
+                                    <p>contact@trac.com</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-5 mb-md-0">
+                    <h5>Stay in touch with us!</h5>
+                    <p>Receive discounts and latest news about our products.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="submit">
+                        <button class="btn btn-outline-primary" type="button" id="submit">Submit</button>
+                    </div>
+                    <div class="pt-2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div> 
             </div>
-            <div class="col-md-5 mb-md-0">
-                <h5>Stay in touch with us!</h5>
-                <p>Receive discounts and latest news about our products.</p>
-                <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="submit">
-                    <button class="btn btn-outline-primary" type="button" id="submit">Submit</button>
-                </div>
-                <div class="pt-2">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-            </div> 
-        </div>
-        <div class="text-center pb-3">
-            <small>Copyright &copy; 2023 TRAC. All Rights Reserved.</small>
+            <div class="text-center pb-3">
+                <small>Copyright &copy; 2023 TRAC. All Rights Reserved.</small>
+            </div>
         </div>
     </div>
-</div>
 </body>
 
 </html>
