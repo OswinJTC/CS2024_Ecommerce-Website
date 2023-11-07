@@ -124,3 +124,33 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
     border: 1px solid #000000;
 }
+
+.our-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+.FAQ-Ques,
+.FAQ-Ques p {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'DM Sans', sans-serif;
+        color: #000000 ;
+}
+
+.FAQ-Ans,
+.FAQ-Ans p {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: 'DM Sans', sans-serif;
+        color: #000000 ;
+}
+
+.custom-table {
+
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
