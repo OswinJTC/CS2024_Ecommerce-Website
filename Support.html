@@ -14,16 +14,17 @@
         <!-- manual scripts below here -->
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/buttons.css">
-        
+        <script type="text/javascript" src="scripts/cart.js"></script>
+        <script type="text/javascript" src="scripts/CartItem.js"></script>
         <!-- manual scripts end here -->
     </head>
     <body>
 
-        <div id="header-navbar" class="bg-mode-darken">
+        <div id="header-navbar">
             <div class="container">
                 <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
-                    <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
-                    <ul class="nav col-md-auto mb-4 justify-content-center mb-md-0">
+                    <a href="index.html" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
+                    <ul class="nav col-md-auto col-sm-auto mb-4 justify-content-center mb-md-0">
                         <li><a href="index.html" class="nav-link px-3">Home</a></li>
                         <li><a href="about.html" class="nav-link px-3">About</a></li>
                         <li><a href="products.html" class="nav-link px-3">Products</a></li>
@@ -32,11 +33,13 @@
                         <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
                         <li><a href="Support.html" class="nav-link px-3">Support</a></li>
                     </ul>
-                    <div class="col-md-3 text-end mb-md-0">
-                        <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                    <div class="col-md-2 text-end mb-md-0">
+                        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                        <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
                     </div> 
                 </header>
             </div>
+        </div>
       
 
         
@@ -289,6 +292,6 @@
                 </div>
             </div>
         </div>
-
+        <script type="text/javascript" src="scripts/productListener.js"></script>
     </body>
 </html>

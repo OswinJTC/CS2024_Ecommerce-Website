@@ -1,350 +1,354 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Home | TRAC Watches and Fitness Trackers</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <head>
+        <title>Home | TRAC Watches and Fitness Trackers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- manual scripts below here -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/buttons.css">
-    <script type="text/javascript" src="scripts/quantity_handler.js"></script>
-    <!-- manual scripts end here -->
-</head>
+        <!-- manual scripts below here -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/buttons.css">
+        <script type="text/javascript" src="scripts/cart.js"></script>
+        <script type="text/javascript" src="scripts/CartItem.js"></script>
+        <script type="text/javascript" src="scripts/productHandler.js"></script>
+        <!-- manual scripts end here -->
+    </head>
 
-<body>
+    <body>
 
-    <div id="header-navbar" class="bg-mode-darken">
-        <div class="container">
-            <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
-                <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
-                <ul class="nav col-md-auto mb-4 justify-content-center mb-md-0">
-                    <li><a href="index.html" class="nav-link px-3">Home</a></li>
-                    <li><a href="about.html" class="nav-link px-3">About</a></li>
-                    <li><a href="products.html" class="nav-link px-3">Products</a></li>
-                    <li><a href="OurApp.html" class="nav-link px-3">Our App</a></li>
-                    <li><a href="Contact.html" class="nav-link px-3">Contact</a></li>
-                    <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
-                    <li><a href="Support.html" class="nav-link px-3">Support</a></li>
-                </ul>
-                <div class="col-md-3 text-end mb-md-0">
-                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-                </div> 
-            </header>
-        </div>
-    </div>
-
-    <div class="py-5 text-center">
-        <h1 class="text-center">TraChronos Series</h1>
-    </div>
-
-
-    <!-- Product Order Section -->
-    <div class="container pb-5 px-5">
-        <div class="row align-items-center bg-mode-darken py-5 rounded-5">
-            <div class="col-md-6 product1-order-image">
-                <img src="images/index-3.png">
+        <div id="header-navbar">
+            <div class="container">
+                <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
+                    <a href="index.html" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
+                    <ul class="nav col-md-auto col-sm-auto mb-4 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-3">Home</a></li>
+                        <li><a href="about.html" class="nav-link px-3">About</a></li>
+                        <li><a href="products.html" class="nav-link px-3">Products</a></li>
+                        <li><a href="OurApp.html" class="nav-link px-3">Our App</a></li>
+                        <li><a href="Contact.html" class="nav-link px-3">Contact</a></li>
+                        <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
+                        <li><a href="Support.html" class="nav-link px-3">Support</a></li>
+                    </ul>
+                    <div class="col-md-2 text-end mb-md-0">
+                        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                        <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
+                    </div> 
+                </header>
             </div>
-            <div class="col-md-6 product1-order-info">
-                <h2>TraChronos</h2>
-                <br />
-                <h3 class="mb-4">SGD 549</h3>
-                
-                <div class="form-group my-2 pb-2" style="width: 250px">
-                    <label class="label-text" for="colorSelect">
-                        <h4>Color</h4>
-                    </label>
-                    <select style="font-family: 'DM Sans', sans-serif;" class="form-select rectangular-for py-2" id="colorSelect" required>
-                        <option selected>Choose color</option>
-                        <option value="1">Gray</option>
-                        <option value="2">White</option>
-                    </select>
+        </div>
+
+        <div class="py-5 text-center">
+            <h1 class="text-center">TraChronos Series</h1>
+        </div>
+
+
+        <!-- Product Order Section -->
+        <div class="container pb-5 px-5">
+            <div class="row align-items-center bg-mode-darken py-5 rounded-5">
+                <div class="col-md-6 product1-order-image">
+                    <img id="productImage" src="images/product-images/product3-grey.png">
                 </div>
-
-                <div class="form-group my-3 pt-2">
-                    <label class="label-text" for="quantitySelect">
-                        <h4>Quantity</h4>
-                    </label>
-                    <div class="qty-selector input-group">
-                        <button id="minus" style="width: 50px;" class="btn btn-primary text-center p-2" disabled>-</button>
-                        <input id="quantity" name="quantity" class="border-0" style="text-align: center; width: 152px;" type="text" value="1" readonly>
-                        <button id="plus" style="width: 50px;" class="btn btn-primary text-center p-2">+</button>
-                    </div>
-                </div>
-
-                <button class="btn btn-primary" style="width: 250px">Add to Cart</button>
-
-            </div>
-            
-        </div>
-    </div>
- 
-
-    <!-- Product Description Section -->
-    <div class="container p-5">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-8 spotify-text">
-                <h1 class="mt-4">Connect to Your Favourite Music App</h1>
-                <br />
-                <p>Spotify has always been available on your phone, your computer and your tablet. Now you can get it on your compatible Garmin watch with Spotify Premium.</p>
-                <p>There are millions of tracks on Spotify, so the right music is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you. You can also browse through the music collections of friends, artists and celebrities, or create a radio station and just sit back.</p>
-            </div>
-        
-            <div class="col-md-4 text-right">
-                <img src="images/spotify.png" width="100%" alt="Spotify">
-            </div>
-        </div>
-    </div>
-
-
-    <div class="pt-5 text-center">
-        <h1 class="text-center">Features</h1>
-    </div>
-
-
-    <!-- Product Features Section -->
-    <div class="container px-5 mb-5 pb-5">
-        <div class="row align-items-top justify-content-between" style="margin-top: 50px;">
-            <div class="col-md-3 text-center">
-                
-                <img src="images/location.png" alt="Location Icon" width="50%">
-                <p>Track pace, distance and more with built-in GPS.</p>
-            </div>
-            <div class="col-md-3 text-center">
-                <img src="images/battery.png" alt="Battery Icon" width="50%">
-                <p>Get up to 2 weeks of battery life. Because less charging is always a good thing.</p>
-            </div>
-            <div class="col-md-3 text-center">
-                <img src="images/health.png" alt="Health Icon" width="50%">
-                <p>Monitor your overall health and wellness.</p>
-            </div>
-        </div>
-    </div>
-
-
- <!-- referecne ltr -->
-    <div class="py-5 text-center">
-        <h1 class="text-center">Specifications</h1>
-    </div>
-
-    <div class="container pb-5" style = "padding-left: 50px; padding-right: 50px; ">
-       
-        <table class="table table-bordered" style="color: white; background-color: transparent;">
-            <tr>
-                <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;  ">
-                    <h5>Daily features</h5>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
-                    <h5>Safety features</h5>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;  ">
-                    <h5>General</h5>
-                </td>
-            </tr>
-            <tr>
-
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>Weather</li>
-                        <li>Calendar</li>
-                        <li>Messages</li>
-                        <li>Alarm & Stop Watch</li>
-                        <li>Time & Date</li>
-                        <li>Smart Lock</li>
-                    </ul>
-                </td>
-
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>LiveTrack</li>
-                        <li>Incident Detection</li>
-                        <li>Live Event Sharing</li>
-                        <li>Assistance</li>
-                    </ul>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>1.3" - 260 x 260 pixels</li>
-                        <li>Weight: 49g</li>
-                        <li>Strap Material: silicone</li>
-                        <li>Physical Size: 45.6 x 45.6 x 12.9 mm (Fits wrists with a circumference of 130-205 mm)</li>
-                    </ul>
+                <div class="col-md-6 product1-order-info">
+                    <h2 id="model">TraChronos</h2>
+                    <br />
+                    <h3 id="price" class="mb-4">SGD 549</h3>
                     
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;  ">
-                    <h5>Health Statistics</h5>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
-                    <h5>Connectivity</h5>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
-                    <h5>Ratings</h5>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>Heart rate</li>
-                        <li>Respiration rate</li>
-                        <li>Fitness Age</li>
-                        <li>Stress</li>
-                        <li>Sleep</li>
-                        <li>Hydration</li>
-                        <li>Menstrual Tracking</li>
-                    </ul>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>Smart Notifications</li>
-                        <li>Music (Spotify, Deezer, Apple Music)</li>
-                        <li>iPhone & Android</li>
-                        <li>Find my phone & watch</li>
-                    </ul>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>Battery Life:</li>
-                        <ul>
-                            <li>Normal mode: Up to 14 days</li>
-                            <li>GPS-GNSS mode: 30hrs</li>
-                            <li>All-Systems GNSS mode: 25hrs</li>
-                            <li>All-Systems GNSS mode +</li>
-                            <li>Multi-Band: Up to 16 hours</li>
+                    <div class="form-group my-2 pb-2" style="width: 250px">
+                        <label class="label-text" for="colorSelect">
+                            <h4>Color</h4>
+                        </label>
+                        <select id="color" style="font-family: 'DM Sans', sans-serif;" class="form-select rectangular-for py-2" required>
+                            <option selected>Choose color</option>
+                            <option value="Black">Grey</option>
+                            <option value="Grey">White</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group my-3 pt-2">
+                        <label class="label-text" for="quantitySelect">
+                            <h4>Quantity</h4>
+                        </label>
+                        <div class="qty-selector input-group">
+                            <button id="minus" style="width: 50px;" class="btn btn-primary text-center p-2">-</button>
+                            <input id="quantity" name="quantity" class="border-0" style="text-align: center; width: 152px;" type="text" value="1" readonly>
+                            <button id="plus" style="width: 50px;" class="btn btn-primary text-center p-2">+</button>
+                        </div>
+                    </div>
+
+                    <button id="add" class="btn btn-primary" style="width: 250px">Add to Cart</button>
+
+                </div>
+                
+            </div>
+        </div>
+    
+
+        <!-- Product Description Section -->
+        <div class="container p-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-8 spotify-text">
+                    <h1 class="mt-4">Connect to Your Favourite Music App</h1>
+                    <br />
+                    <p>Spotify has always been available on your phone, your computer and your tablet. Now you can get it on your compatible Garmin watch with Spotify Premium.</p>
+                    <p>There are millions of tracks on Spotify, so the right music is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you. You can also browse through the music collections of friends, artists and celebrities, or create a radio station and just sit back.</p>
+                </div>
+            
+                <div class="col-md-4 text-right">
+                    <img src="images/spotify.png" width="100%" alt="Spotify">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pt-5 text-center">
+            <h1 class="text-center">Features</h1>
+        </div>
+
+
+        <!-- Product Features Section -->
+        <div class="container px-5 mb-5 pb-5">
+            <div class="row align-items-top justify-content-between" style="margin-top: 50px;">
+                <div class="col-md-3 text-center">
+                    
+                    <img src="images/location.png" alt="Location Icon" width="50%">
+                    <p>Track pace, distance and more with built-in GPS.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="images/battery.png" alt="Battery Icon" width="50%">
+                    <p>Get up to 2 weeks of battery life. Because less charging is always a good thing.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="images/health.png" alt="Health Icon" width="50%">
+                    <p>Monitor your overall health and wellness.</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- referecne ltr -->
+        <div class="py-5 text-center">
+            <h1 class="text-center">Specifications</h1>
+        </div>
+
+        <div class="container pb-5" style = "padding-left: 50px; padding-right: 50px; ">
+        
+            <table class="table table-bordered" style="color: white; background-color: transparent;">
+                <tr>
+                    <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;  ">
+                        <h5>Daily features</h5>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
+                        <h5>Safety features</h5>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;  ">
+                        <h5>General</h5>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>Weather</li>
+                            <li>Calendar</li>
+                            <li>Messages</li>
+                            <li>Alarm & Stop Watch</li>
+                            <li>Time & Date</li>
+                            <li>Smart Lock</li>
+                        </ul>
+                    </td>
+
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>LiveTrack</li>
+                            <li>Incident Detection</li>
+                            <li>Live Event Sharing</li>
+                            <li>Assistance</li>
+                        </ul>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>1.3" - 260 x 260 pixels</li>
+                            <li>Weight: 49g</li>
+                            <li>Strap Material: silicone</li>
+                            <li>Physical Size: 45.6 x 45.6 x 12.9 mm (Fits wrists with a circumference of 130-205 mm)</li>
+                        </ul>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;  ">
+                        <h5>Health Statistics</h5>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
+                        <h5>Connectivity</h5>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
+                        <h5>Ratings</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>Heart rate</li>
+                            <li>Respiration rate</li>
+                            <li>Fitness Age</li>
+                            <li>Stress</li>
+                            <li>Sleep</li>
+                            <li>Hydration</li>
+                            <li>Menstrual Tracking</li>
+                        </ul>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>Smart Notifications</li>
+                            <li>Music (Spotify, Deezer, Apple Music)</li>
+                            <li>iPhone & Android</li>
+                            <li>Find my phone & watch</li>
+                        </ul>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>Battery Life:</li>
+                            <ul>
+                                <li>Normal mode: Up to 14 days</li>
+                                <li>GPS-GNSS mode: 30hrs</li>
+                                <li>All-Systems GNSS mode: 25hrs</li>
+                                <li>All-Systems GNSS mode +</li>
+                                <li>Multi-Band: Up to 16 hours</li>
+
+                            </ul>
+                            <li>Water Rating: 5 ATM</li>
+                        </ul>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;">
+                        <h5>Fitness Tracking</h5>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;">
+                        <h5>Training Metrics</h5>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;">
+                        <h5>Workout Features</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>Running indoors/outdoors</li>
+                            <li>Biking indoors/outdoors</li>
+                            <li>Pool swimming, cardio</li>
+
+                            <li>Elliptical training</li>
+                            <li>Stair stepping</li>
+                            <li>HIIT, pilates, and yoga</li>
+                            <li>Strength & Floor Climbing</li>
+                            <li>Skiing & Snowboarding</li>
+                            <li>Stand Up Paddleboarding, Rowing & Hiking</li>
+                            <li>Mountain Biking & eBiking</li>
+                            <li>Open Water Swimming & Triathlon / Multisport</li>
 
                         </ul>
-                        <li>Water Rating: 5 ATM</li>
-                    </ul>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>VO2 max</li>
+                            <li>Recovery Time</li>
+                            <li>Race Predictor</li>
+                            <li>Body Battery (Based on heart rate variability, stress, and activity)</li>
+                            <li>GPS</li>
+                            <li>Step Counter</li>
+                            <li>Pulse Ox</li>
+                            <li>Gyroscope </li>
+
+                        </ul>
+                    </td>
+                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
+                        <ul style="padding-left: 60px;">
+                            <li>Interval Workouts</li>
+                            <li>PacePro - helps you create a pacing plan</li>
+                            <li>Suggested workouts</li>
+                            <li>Audio Prompts via the TRAConnect app</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
 
 
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;">
-                    <h5>Fitness Tracking</h5>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;">
-                    <h5>Training Metrics</h5>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;">
-                    <h5>Workout Features</h5>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>Running indoors/outdoors</li>
-                        <li>Biking indoors/outdoors</li>
-                        <li>Pool swimming, cardio</li>
 
-                        <li>Elliptical training</li>
-                        <li>Stair stepping</li>
-                        <li>HIIT, pilates, and yoga</li>
-                        <li>Strength & Floor Climbing</li>
-                        <li>Skiing & Snowboarding</li>
-                        <li>Stand Up Paddleboarding, Rowing & Hiking</li>
-                        <li>Mountain Biking & eBiking</li>
-                        <li>Open Water Swimming & Triathlon / Multisport</li>
-
-                    </ul>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>VO2 max</li>
-                        <li>Recovery Time</li>
-                        <li>Race Predictor</li>
-                        <li>Body Battery (Based on heart rate variability, stress, and activity)</li>
-                        <li>GPS</li>
-                        <li>Step Counter</li>
-                        <li>Pulse Ox</li>
-                        <li>Gyroscope </li>
-
-                    </ul>
-                </td>
-                <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                    <ul style="padding-left: 60px;">
-                        <li>Interval Workouts</li>
-                        <li>PacePro - helps you create a pacing plan</li>
-                        <li>Suggested workouts</li>
-                        <li>Audio Prompts via the TRAConnect app</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
-    
-
-
+        
+        
+        
 
     
-    
-    
 
- 
-
-    <div id="footer-navbar" class="bg-mode-darken">
-        <div class="container">
-            <div class="d-flex flex-wrap bg align-items-start justify-content-between justify-content-md-between pt-5 pb-3">
-                <div class="col-md-5">
-                    <div class="row g-0">
-                        <div class="col-md">
-                            <h5>TRAC.</h5>
-                            <ul class="footer-menu">
-                                <li><a class="nav-link pt-2" href="index.html">Home</a></li>
-                                <li><a class="nav-link pt-2" href="about.html">About Us</a></li>
-                                <li><a class="nav-link pt-2" href="products.html">Products</a></li>
-                                <li><a class="nav-link pt-2" href="/">Our App</a></li>
-                                <li><a class="nav-link pt-2" href="/">Privacy Policy</a></li>
-                            </ul> 
-                        </div>
-                        <div class="col-md">
-                            <h5>Support</h5>
-                            <ul class="footer-menu">
-                                <li><a class="nav-link pt-2" href="/">FAQ</a></li>
-                                <li><a class="nav-link pt-2" href="/">Returns & Refunds</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md">
-                            <h5>Contact Us</h5>
-                            <ul class="footer-menu">
-                                <li class="pt-2">
-                                    <h6>Phone</h6>
-                                    <p>+65 8888 8888</p>
-                                </li>
-                                <li class="pt-2">
-                                    <h6>Email</h6>
-                                    <p>contact@trac.com</p>
-                                </li>
-                            </ul>
+        <div id="footer-navbar" class="bg-mode-darken">
+            <div class="container">
+                <div class="d-flex flex-wrap bg align-items-start justify-content-between justify-content-md-between pt-5 pb-3">
+                    <div class="col-md-5">
+                        <div class="row g-0">
+                            <div class="col-md">
+                                <h5>TRAC.</h5>
+                                <ul class="footer-menu">
+                                    <li><a class="nav-link pt-2" href="index.html">Home</a></li>
+                                    <li><a class="nav-link pt-2" href="about.html">About Us</a></li>
+                                    <li><a class="nav-link pt-2" href="products.html">Products</a></li>
+                                    <li><a class="nav-link pt-2" href="/">Our App</a></li>
+                                    <li><a class="nav-link pt-2" href="/">Privacy Policy</a></li>
+                                </ul> 
+                            </div>
+                            <div class="col-md">
+                                <h5>Support</h5>
+                                <ul class="footer-menu">
+                                    <li><a class="nav-link pt-2" href="/">FAQ</a></li>
+                                    <li><a class="nav-link pt-2" href="/">Returns & Refunds</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md">
+                                <h5>Contact Us</h5>
+                                <ul class="footer-menu">
+                                    <li class="pt-2">
+                                        <h6>Phone</h6>
+                                        <p>+65 8888 8888</p>
+                                    </li>
+                                    <li class="pt-2">
+                                        <h6>Email</h6>
+                                        <p>contact@trac.com</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-5 mb-md-0">
+                        <h5>Stay in touch with us!</h5>
+                        <p>Receive discounts and latest news about our products.</p>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="submit">
+                            <button class="btn btn-outline-primary" type="button" id="submit">Submit</button>
+                        </div>
+                        <div class="pt-2">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div> 
                 </div>
-                <div class="col-md-5 mb-md-0">
-                    <h5>Stay in touch with us!</h5>
-                    <p>Receive discounts and latest news about our products.</p>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="submit">
-                        <button class="btn btn-outline-primary" type="button" id="submit">Submit</button>
-                    </div>
-                    <div class="pt-2">
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                </div> 
-            </div>
-            <div class="text-center pb-3">
-                <small>Copyright &copy; 2023 TRAC. All Rights Reserved.</small>
+                <div class="text-center pb-3">
+                    <small>Copyright &copy; 2023 TRAC. All Rights Reserved.</small>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+        <script type="text/javascript" src="scripts/productListener.js"></script>
+    </body>
 
 </html>

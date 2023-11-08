@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(170deg, rgba(21,15,113,1) 5%, rgba(143,12,12,1) 50%, rgba(21,15,113,1) 95%) no-repeat;
+    background: linear-gradient(170deg, rgba(12,9,63,1) 5%, rgba(79,18,15,1) 50%, rgba(12,9,63,1) 95%) no-repeat;
     min-height: 100%;
 }
 
@@ -30,6 +30,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .fa-solid {
     font-size: 32px;
+}
+
+.fa-cart-filled {
+    display: inline-block;
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    vertical-align: top;
+    margin-left: -10px;
+    margin-top: -5px;
+    visibility: hidden;
 }
 
 .eyecatch-text {
@@ -126,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #000000;
 }
 
-.our-app{
+.our-app {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Home | TRAC Watches and Fitness Trackers</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,9 +17,12 @@
         <link rel="stylesheet" href="styles/buttons.css">
         <script type="text/javascript" src="scripts/cart.js"></script>
         <script type="text/javascript" src="scripts/CartItem.js"></script>
+        <script type="text/javascript" src="scripts/productHandler.js"></script>
         <!-- manual scripts end here -->
     </head>
+
     <body>
+
         <div id="header-navbar">
             <div class="container">
                 <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
@@ -40,118 +44,20 @@
             </div>
         </div>
 
-        <!-- begin carousel -->
-        <div id="carouselProducts" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselProducts" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Product 1"></button>
-                <button type="button" data-bs-target="#carouselProducts" data-bs-slide-to="1" aria-label="Product 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div style="background: url('images/banner/b1.png') no-repeat; background-size: cover;" class="d-block p-5">
-                        <div class="p-4">
-                            <div class="row d-flex flex-row-reverse align-items-center justify-content-md-between">
-                                <div class="col-md-4 mx-4 text-center">
-                                    <img src="images/index-landing.jpg" width="80%">
-                                    <h1 class="eyecatch-text">TracRunner</h1>
-                                    <h3 class="eyecatch-desc">See Yourself As A Runner</h3>
-                                    <br />
-                                    <a href="tracrunner.html"><button type="button" class="btn btn-primary btn-buy rounded-5 px-5 py-3">Buy Now</button></a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="py-5 text-center">
+            <h1 class="text-center">My Cart</h1>
+        </div>
+
+        <!-- Product Order Section -->
+        <div class="container pb-5 px-5">
+            <div class="row d-flex align-items-center bg-mode-darken p-5 rounded-5">
+                <div class="row col-md-6 m-5">
+                    <div class="border rounded-5 p-5">
+                        <h2>Content</h2>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div style="background: url('images/banner/b2.png') no-repeat; background-size: cover;" class="d-block p-5">
-                        <div class="p-4">
-                            <div class="row d-flex align-items-center justify-content-md-between">
-                                <div class="col-md-4 mx-4 text-center">
-                                    <img src="images/banner/banner2-sleep.png" width="80%">
-                                    <h1 class="eyecatch-text">TraChronos</h1>
-                                    <h3 class="eyecatch-desc">Get a Good Night's Sleep with TRAC Today!</h3>
-                                    <br />
-                                    <a href="trachronos.html"><button type="button" class="btn btn-primary btn-buy rounded-5 px-5 py-3">Buy Now</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducts" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProducts" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
-        </div>
-        <!-- end carousel -->
-
-        <!-- 3 products side -by-side here -->
-        <div class="container bg-mode-darken rounded-5 py-3 my-5">
-            <h3 class="text-center pt-5">Find the perfect watch for you</h3>
-            <div class="row">
-                <div class="col-md p-4 text-center">
-                    <img src="images/index-1.png" width="100%">
-                    <h4 class="pb-4 product-model">TracRunner</h4>
-                    <button type="button" class="btn btn-primary btn-buy rounded-5 mx-4 px-5 py-3">Buy Now</button>
-                </div>
-                <div class="col-md p-4 text-center">
-                    <img src="images/index-2.png" width="100%">
-                    <h4 class="pb-4 product-model">TracActive</h4>
-                    <button type="button" class="btn btn-primary btn-buy rounded-5 mx-4 px-5 py-3">Buy Now</button>
-                </div>
-                <div class="col-md p-4 text-center">
-                    <img src="images/index-3.png" width="100%">
-                    <h4 class="pb-4 product-model">TraChronos</h4>
-                    <button type="button" class="btn btn-primary btn-buy rounded-5 mx-4 px-5 py-3">Buy Now</button>
-                </div>
-            </div>
-        </div>
-        <!-- end 3 products side-by-side -->
-
-        <div class="container p-5">
-
-            <div class="row d-flex align-items-center justify-content-md-between m-4">
-                <div class="col-md-4">
-                    <img class="rounded-5" src="images/sleep.png" width="100%">
-                </div>
-
-                <div class="col-md-7 features">
-                    <h1>Sleep Monitoring</h1>
-                    <p>We have an extensive sleep monitoring system that tracks HRV, respiratory rate, heart rate, body movement, and bedtime to give every night's sleep a score.</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container p-5">
-            <div class="row d-flex align-items-center justify-content-md-between p-4">
-                <div class="col-md-4">
-                    <img class="rounded-4" src="images/track.png" width="100%">
-                </div>
-                <div class="col-md-7 features">
-                    <h1>Fitness Tracking</h1>
-                    <p>Our system tracks your steps, intensity minutes, calories burned and more. You can sync this data with the TRAConnect app.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container p-2">
-            <div class="row d-flex align-items-center justify-content-md-between p-5">
-                <div class="col-md-7">
-                    <h1 class="eyecatch-text app-eyecatch">Earn Tracback points when you join us today!</h1>
-                    <br />
-                    <button type="button" class="btn btn-primary btn-buy rounded-5 px-5 py-3">Learn More</button>
-                    <div class="row py-5">
-                        <img class="app-badge" src="images/apple-store-badge.svg">
-                        <img class="app-badge" src="images/google-play-badge.svg">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <img src="images/index-home.png" height="700px">
+                <div class="col-md-4 p-5">
+                    <h2>Order Summary</h2>
                 </div>
             </div>
         </div>
@@ -213,7 +119,5 @@
         </div>
         <script type="text/javascript" src="scripts/productListener.js"></script>
     </body>
+
 </html>
-
-
-
