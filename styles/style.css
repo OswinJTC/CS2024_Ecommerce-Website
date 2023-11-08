@@ -33,11 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .eyecatch-text {
-    font-size: 42px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .eyecatch-desc {
+    font-size: 24px;
     font-weight: 300;
 }
 
@@ -51,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features h1 {
-    font-size: 52px;
+    font-size: 42px;
 }
 
 .features p {
