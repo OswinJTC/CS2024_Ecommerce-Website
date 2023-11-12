@@ -19,26 +19,41 @@
         <!-- manual scripts end here -->
     </head>
     <body>
-        <div id="header-navbar">
+        <nav class="navbar navbar-dark navbar-expand-lg py-4">
             <div class="container">
-                <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
-                    <a href="index.html" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
-                    <ul class="nav col-md-auto col-sm-auto mb-4 justify-content-center mb-md-0">
+                <a class="col-3 col-md-1 text-left navbar-brand text-decoration-none" href="index.html">
+                    <h1 class="logo">TRAC.</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" col-3 col-md-1 text-end navbar-right order-lg-last">
+                    <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
+                </div>
+                <div class="col-auto col-md-auto collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li><a href="index.html" class="nav-link px-3">Home</a></li>
                         <li><a href="about.html" class="nav-link px-3">About</a></li>
-                        <li><a href="products.html" class="nav-link px-3">Products</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class=dropdown-item href="products.html"><b>All products</b></a></li>
+                                <li><a class="dropdown-item" href="tracrunner.html">TracRunner</a></li>
+                                <li><a class="dropdown-item" href="tracactive.html">TracActive</a></li>
+                                <li><a class="dropdown-item" href="trachronos.html">TraChronos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="OurApp.html" class="nav-link px-3">Our App</a></li>
                         <li><a href="Contact.html" class="nav-link px-3">Contact</a></li>
                         <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
                         <li><a href="Support.html" class="nav-link px-3">Support</a></li>
                     </ul>
-                    <div class="col-md-2 text-end mb-md-0">
-                        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-                        <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
-                    </div> 
-                </header>
+                </div>
             </div>
-        </div>
+        </nav>
 
         <!-- begin carousel -->
         <div id="carouselProducts" class="carousel slide" data-bs-ride="carousel">
@@ -113,45 +128,44 @@
         <!-- end 3 products side-by-side -->
 
         <div class="container p-5">
-
-            <div class="row d-flex align-items-center justify-content-md-between m-4">
-                <div class="col-md-4">
+            <div class="row d-flex align-items-center justify-content-md-between">
+                <div class="col-8 col-md-4 pb-5 py-md-0 mx-auto">
                     <img class="rounded-5" src="images/sleep.png" width="100%">
                 </div>
 
                 <div class="col-md-7 features">
-                    <h1>Sleep Monitoring</h1>
-                    <p>We have an extensive sleep monitoring system that tracks HRV, respiratory rate, heart rate, body movement, and bedtime to give every night's sleep a score.</p>
+                    <h1 class="text-center text-md-start">Sleep Monitoring</h1>
+                    <p class="text-center text-md-start">We have an extensive sleep monitoring system that tracks HRV, respiratory rate, heart rate, body movement, and bedtime to give every night's sleep a score.</p>
                 </div>
 
             </div>
         </div>
 
         <div class="container p-5">
-            <div class="row d-flex align-items-center justify-content-md-between p-4">
-                <div class="col-md-4">
+            <div class="row align-items-center justify-content-md-between">
+                <div class="col-8 col-md-4 pb-5 py-md-0 mx-auto">
                     <img class="rounded-4" src="images/track.png" width="100%">
                 </div>
-                <div class="col-md-7 features">
-                    <h1>Fitness Tracking</h1>
-                    <p>Our system tracks your steps, intensity minutes, calories burned and more. You can sync this data with the TRAConnect app.</p>
+                <div class="col-xs-12 col-md-7 features">
+                    <h1 class="text-center text-md-start">Fitness Tracking</h1>
+                    <p class="text-center text-md-start">Our system tracks your steps, intensity minutes, calories burned and more. You can sync this data with the TRAConnect app.</p>
                 </div>
             </div>
         </div>
 
         <div class="container p-2">
-            <div class="row d-flex align-items-center justify-content-md-between p-5">
-                <div class="col-md-7">
+            <div class="row d-flex align-items-center justify-content-md-between p-5 justify-content-center justify-content-md-start">
+                <div class="col-md-7 text-center text-md-start">
                     <h1 class="eyecatch-text app-eyecatch">Earn Tracback points when you join us today!</h1>
                     <br />
                     <button type="button" class="btn btn-primary btn-buy rounded-5 px-5 py-3">Learn More</button>
-                    <div class="row py-5">
+                    <div class="row py-5 justify-content-center justify-content-md-start">
                         <img class="app-badge" src="images/apple-store-badge.svg">
                         <img class="app-badge" src="images/google-play-badge.svg">
                     </div>
                 </div>
-                <div class="col-4">
-                    <img src="images/index-home.png" height="700px">
+                <div class="col-xs col-md-4">
+                    <img class="img-fluid" src="images/index-home.png">
                 </div>
             </div>
         </div>

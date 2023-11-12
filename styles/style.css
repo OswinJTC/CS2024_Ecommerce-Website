@@ -25,11 +25,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.fa-solid {
+.nav-link:hover, .nav-link:focus {
+    color: #CCC;
+}
+
+.fa-solid, .fa-regular {
     font-size: 32px;
+}
+
+.fa-clickable {
+    cursor: pointer;
+    outline: none;
 }
 
 .fa-cart-filled {

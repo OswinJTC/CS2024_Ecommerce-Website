@@ -1,7 +1,8 @@
 class CartItem {
-    constructor(model, price, color, quantity) {
+    constructor(model, price, image, color, quantity) {
         this._model = model;
         this._price = price;
+        this._image = image;
         this._color = color;
         this._quantity = quantity;
     }
@@ -20,6 +21,14 @@ class CartItem {
 
     set price(newPrice) {
         this._price = newPrice;
+    }
+
+    get image() {
+        return this._image;
+    }
+
+    set image(mewImage) {
+        this._image = newImage;
     }
 
     get color() {

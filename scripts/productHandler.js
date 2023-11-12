@@ -40,14 +40,26 @@ function toggleProductImage() {
             case 'Grey':
                 imageNode.src = 'images/product-images/product2-grey.png';
                 break;
+            case 'Mint':
+                imageNode.src = 'images/product-images/product2-mint.png';
+                break;
+            case 'Peach':
+                imageNode.src = 'images/product-images/product2-peach.png';
+                break;
        }
     } else if (productName === 'TraChronos') {
         switch(colorNode.value) {
+            case 'Black':
+                imageNode.src = 'images/product-images/product3-black.png';
+                break;
+            case 'Blue':
+                imageNode.src = 'images/product-images/product3-blue.png';
+                break;
             case 'Grey':
                 imageNode.src = 'images/product-images/product3-grey.png';
                 break;
-            case 'White':
-                imageNode.src = 'images/product-images/product3-white.png';
+            case 'Pink':
+                imageNode.src = 'images/product-images/product3-pink.png';
                 break;
        }
     }

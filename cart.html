@@ -23,26 +23,41 @@
 
     <body>
 
-        <div id="header-navbar">
+        <nav class="navbar navbar-dark navbar-expand-lg py-4">
             <div class="container">
-                <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
-                    <a href="index.html" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
-                    <ul class="nav col-md-auto col-sm-auto mb-4 justify-content-center mb-md-0">
+                <a class="col-3 col-md-1 text-left navbar-brand text-decoration-none" href="index.html">
+                    <h1 class="logo">TRAC.</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" col-3 col-md-1 text-end navbar-right order-lg-last">
+                    <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
+                </div>
+                <div class="col-auto col-md-auto collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li><a href="index.html" class="nav-link px-3">Home</a></li>
                         <li><a href="about.html" class="nav-link px-3">About</a></li>
-                        <li><a href="products.html" class="nav-link px-3">Products</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class=dropdown-item href="products.html"><b>All products</b></a></li>
+                                <li><a class="dropdown-item" href="tracrunner.html">TracRunner</a></li>
+                                <li><a class="dropdown-item" href="tracactive.html">TracActive</a></li>
+                                <li><a class="dropdown-item" href="trachronos.html">TraChronos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="OurApp.html" class="nav-link px-3">Our App</a></li>
                         <li><a href="Contact.html" class="nav-link px-3">Contact</a></li>
                         <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
                         <li><a href="Support.html" class="nav-link px-3">Support</a></li>
                     </ul>
-                    <div class="col-md-2 text-end mb-md-0">
-                        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-                        <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
-                    </div> 
-                </header>
+                </div>
             </div>
-        </div>
+        </nav>
 
         <div class="py-5 text-center">
             <h1 class="text-center">My Cart</h1>
@@ -50,13 +65,31 @@
 
         <!-- Product Order Section -->
         <div class="container pb-5 px-5">
-            <div class="row d-flex align-items-center bg-mode-darken p-5 rounded-5">
-                <div class="row col-md-6 m-5">
-                    <div class="border rounded-5 p-5">
-                        <h2>Content</h2>
-                    </div>
+            <div style="min-height: calc(100vh - 546px)" class="row d-flex bg-mode-darken p-5 rounded-5">
+                <div class="row col-md-7 m-5">
+                    
+                    <script type="text/javascript" src="scripts/displayCart.js"></script>
+
+                    <!-- <div class="row d-flex border rounded-5 py-3">
+                        <div class="col-md-5 align-self-center">
+                            <img src="images/product-images/product1-black.png" width="100%">
+                        </div>
+                        <div class="col-md-6 align-self-center py-4">
+                            <h1>$549</h1>
+                            <H4>TraChronos</h4>
+                            <p>Type: Grey</p>
+                            <div class="qty-selector input-group">
+                                <button id="minus" style="width: 30px;" class="btn btn-primary text-center p-2">-</button>
+                                <input id="quantity" name="quantity" class="border-0" style="text-align: center; width: 62px;" type="text" value="1" readonly>
+                                <button id="plus" style="width: 30px;" class="btn btn-primary text-center p-2">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-1 align-self-top">
+                            <i class="fa-regular fa-trash-can fa-clickable"></i>
+                        </div>
+                    </div> -->
                 </div>
-                <div class="col-md-4 p-5">
+                <div class="col-md-4 py-5">
                     <h2>Order Summary</h2>
                 </div>
             </div>
@@ -118,6 +151,7 @@
             </div>
         </div>
         <script type="text/javascript" src="scripts/productListener.js"></script>
+        <script type="text/javascript" src="scripts/cartListener.js"></script>
     </body>
 
 </html>

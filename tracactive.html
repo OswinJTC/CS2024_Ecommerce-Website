@@ -22,27 +22,51 @@
     </head>
 
     <body>
-
-        <div id="header-navbar">
+        <!-- Toast (Add to Cart) -->
+        <div id="cartToast" class="toast toast align-items-center position-fixed bottom-0 end-0 m-4" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Added to cart!
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-dark navbar-expand-lg py-4">
             <div class="container">
-                <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
-                    <a href="index.html" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
-                    <ul class="nav col-md-auto col-sm-auto mb-4 justify-content-center mb-md-0">
+                <a class="col-3 col-md-1 text-left navbar-brand text-decoration-none" href="index.html">
+                    <h1 class="logo">TRAC.</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" col-3 col-md-1 text-end navbar-right order-lg-last">
+                    <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
+                </div>
+                <div class="col-auto col-md-auto collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li><a href="index.html" class="nav-link px-3">Home</a></li>
                         <li><a href="about.html" class="nav-link px-3">About</a></li>
-                        <li><a href="products.html" class="nav-link px-3">Products</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class=dropdown-item href="products.html"><b>All products</b></a></li>
+                                <li><a class="dropdown-item" href="tracrunner.html">TracRunner</a></li>
+                                <li><a class="dropdown-item" href="tracactive.html">TracActive</a></li>
+                                <li><a class="dropdown-item" href="trachronos.html">TraChronos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="OurApp.html" class="nav-link px-3">Our App</a></li>
                         <li><a href="Contact.html" class="nav-link px-3">Contact</a></li>
                         <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
                         <li><a href="Support.html" class="nav-link px-3">Support</a></li>
                     </ul>
-                    <div class="col-md-2 text-end mb-md-0">
-                        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-                        <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
-                    </div> 
-                </header>
+                </div>
             </div>
-        </div>
+        </nav>
 
         <div class="py-5 text-center">
             <h1 class="text-center">TracActive Series</h1>
@@ -58,16 +82,18 @@
                 <div class="col-md-6 product1-order-info">
                     <h2 id="model">TracActive</h2>
                     <br />
-                    <h3 id="price" class="mb-4">SGD 249</h3>
+                    <h3 id="price" class="mb-4">SGD 399</h3>
                     
                     <div class="form-group my-2 pb-2" style="width: 250px">
                         <label class="label-text" for="colorSelect">
                             <h4>Color</h4>
                         </label>
                         <select id="color" style="font-family: 'DM Sans', sans-serif;" class="form-select rectangular-for py-2" required>
-                            <option selected>Choose color</option>
+                            <option value="" selected>Choose color</option>
                             <option value="Black">Black</option>
                             <option value="Grey">Grey</option>
+                            <option value="Mint">Mint</option>
+                            <option value="Peach">Peach</option>
                         </select>
                     </div>
 
@@ -82,7 +108,7 @@
                         </div>
                     </div>
 
-                    <button id="add" class="btn btn-primary" style="width: 250px">Add to Cart</button>
+                    <button id="add" class="btn btn-secondary" style="width: 250px">Add to Cart</button>
                 </div>
                 
             </div>

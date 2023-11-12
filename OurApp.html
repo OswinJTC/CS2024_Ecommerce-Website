@@ -20,26 +20,41 @@
     </head>
     <body>
 
-        <div id="header-navbar">
+        <nav class="navbar navbar-dark navbar-expand-lg py-4">
             <div class="container">
-                <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
-                    <a href="index.html" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
-                    <ul class="nav col-md-auto col-sm-auto mb-4 justify-content-center mb-md-0">
+                <a class="col-3 col-md-1 text-left navbar-brand text-decoration-none" href="index.html">
+                    <h1 class="logo">TRAC.</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" col-3 col-md-1 text-end navbar-right order-lg-last">
+                    <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
+                </div>
+                <div class="col-auto col-md-auto collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li><a href="index.html" class="nav-link px-3">Home</a></li>
                         <li><a href="about.html" class="nav-link px-3">About</a></li>
-                        <li><a href="products.html" class="nav-link px-3">Products</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class=dropdown-item href="products.html"><b>All products</b></a></li>
+                                <li><a class="dropdown-item" href="tracrunner.html">TracRunner</a></li>
+                                <li><a class="dropdown-item" href="tracactive.html">TracActive</a></li>
+                                <li><a class="dropdown-item" href="trachronos.html">TraChronos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="OurApp.html" class="nav-link px-3">Our App</a></li>
                         <li><a href="Contact.html" class="nav-link px-3">Contact</a></li>
                         <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
                         <li><a href="Support.html" class="nav-link px-3">Support</a></li>
                     </ul>
-                    <div class="col-md-2 text-end mb-md-0">
-                        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-                        <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
-                    </div> 
-                </header>
+                </div>
             </div>
-        </div>
+        </nav>
       
 
         <!-- 3 products side -by-side here -->
@@ -72,14 +87,14 @@
         <div class="container p-5">
 
             <div class="row d-flex align-items-center justify-content-md-between m-4">
-                <div class="col-md-4">
+                <div class="col-8 col-md-4 pb-4 pb-md-0 mx-auto mx-md-0">
                     <img class="rounded-5" src="images/appstep1.png" width="100%">
                 </div>
 
-                <div class="col-md-7 content-about">
+                <div class="col-12 col-md-7 content-about text-center text-md-start">
                     <div class="features">
                         <h2>Step 1</h2>
-                        <h2 style="font-weight: 300;">Tell us your health goals</h2>
+                        <h2 class="fw-light">Tell us your health goals</h2>
                     </div>
                     <p class="copy" style="font-size: 24px; font-weight: 200;">Share your health objectives, and we'll suggest appropriate health challenges for you. Alternatively, you can select one from our Mission library to get started!</p>
                 </div>
@@ -92,17 +107,17 @@
         
         
         <div class="container p-5">
-            <div class="row d-flex align-items-center justify-content-md-between m-4">
-                <div class="col-md-4">
+            <div class="row align-items-center justify-content-md-between m-4">
+                <div class="col-8 col-md-4 pb-4 pb-md-0 mx-auto mx-md-0">
                     <img class="rounded-5" src="images/appstep2.png" width="100%">
                 </div>
         
-                <div class="col-md-7 content-about">
+                <div class="col-12 col-md-7 content-about text-center text-md-start">
                     <div class="features">
                         <h2>Step 2</h2>
                         <h2 style="font-weight: 300;">Carry out missions</h2>
                     </div>
-                    <p class="copy" style="font-size: 24px; font-weight: 200;">Engage in your preferred daily healthy activities within each <br /> health Mission, we'll support you throughout your journey!</p>
+                    <p class="copy" style="font-size: 24px; font-weight: 200;">Engage in your preferred daily healthy activities within each health mission, we'll support you throughout your journey!</p>
                 </div>
             </div>
         </div>
@@ -110,10 +125,10 @@
         
         <div class="container p-5">
             <div class="row d-flex align-items-center justify-content-md-between m-4">
-                <div class="col-md-4">
+                <div class="col-8 col-md-4 pb-4 pb-md-0 mx-auto mx-md-0">
                     <img class="rounded-5" src="images/appstep3.png" width="100%">
                 </div>
-                <div class="col-md-7 content-about">
+                <div class="col-12 col-md-7 content-about text-center text-md-start">
                     <div class="features">
                         <h2>Step 3</h2>
                         <h2 style="font-weight: 300;">TRAC your progress</h2>

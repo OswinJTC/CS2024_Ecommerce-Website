@@ -23,7 +23,7 @@
 
     <body>
 
-        <div id="header-navbar">
+        <!-- <div id="header-navbar">
             <div class="container">
                 <header class="d-flex flex-wrap bg align-items-center justify-content-center justify-content-md-between py-4">
                     <a href="index.html" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"><h1 class="logo">TRAC.</h1></a>
@@ -42,7 +42,43 @@
                     </div> 
                 </header>
             </div>
-        </div>
+        </div> -->
+
+        <nav class="navbar navbar-dark navbar-expand-lg py-4">
+            <div class="container">
+                <a class="col-3 col-md-1 text-left navbar-brand text-decoration-none" href="index.html">
+                    <h1 class="logo">TRAC.</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" col-3 col-md-1 text-end navbar-right order-lg-last">
+                    <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
+                </div>
+                <div class="col-auto col-md-auto collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li><a href="index.html" class="nav-link px-3">Home</a></li>
+                        <li><a href="about.html" class="nav-link px-3">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class=dropdown-item href="products.html"><b>All products</b></a></li>
+                                <li><a class="dropdown-item" href="tracrunner.html">TracRunner</a></li>
+                                <li><a class="dropdown-item" href="tracactive.html">TracActive</a></li>
+                                <li><a class="dropdown-item" href="trachronos.html">TraChronos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="OurApp.html" class="nav-link px-3">Our App</a></li>
+                        <li><a href="Contact.html" class="nav-link px-3">Contact</a></li>
+                        <li><a href="FAQ.html" class="nav-link px-3">FAQ</a></li>
+                        <li><a href="Support.html" class="nav-link px-3">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <div class="pt-5 pb-4 text-center">
             <h1>We are TRAC.</h1>
@@ -62,11 +98,11 @@
         </div>
 
         <div class="container content-about">
-            <div class="d-flex flex-row p-3 align-items-center justify-content-md-between">
-                <div class="col-md-3 p-4">
+            <div class="row d-md-flex flex-row p-3 align-items-center justify-content-md-between">
+                <div class="col-8 mx-auto col-md-3 p-4">
                     <img class="img-fluid" src="images/about-icon-1.png">
                 </div>
-                <div class="col-md-9 p-4">
+                <div class="col-12 text-center text-md-start col-md-9 p-4">
                     <h3>Our Journey and Commitment</h3>
                     <br />
                     <p class="copy">TRAC was founded in 1989 and headquartered in the United States.</p>
@@ -77,11 +113,11 @@
         </div>
 
         <div class="container content-about">
-            <div class="d-flex flex-row-reverse p-3 align-items-center justify-content-md-between">
-                <div class="col-md-3 p-4">
+            <div class="row d-md-flex flex-row-reverse p-3 align-items-center justify-content-md-between">
+                <div class="col-8 mx-auto col-md-3 p-4">
                     <img class="img-fluid" src="images/about-icon-2.png">
                 </div>
-                <div class="col-md-9 p-4">
+                <div class="col-12 text-center text-md-start col-md-9 p-4">
                     <h3>Our Mission to Provide You with the Best</h3>
                     <br />
                     <p class="copy">Today, TRAC is the renowned leader in the aviation, marine, automotive, outdoor, and fitness markets.</p>
@@ -91,11 +127,11 @@
         </div>
 
         <div class="container content-about">
-            <div class="d-flex flex-row p-3 align-items-center justify-content-md-between">
-                <div class="col-md-3 p-4">
+            <div class="row d-md-flex flex-row p-3 align-items-center justify-content-md-between">
+                <div class="col-8 mx-auto col-md-3 p-4">
                     <img class="img-fluid" src="images/about-icon-3.png">
                 </div>
-                <div class="col-md-9 p-4">
+                <div class="col-12 text-center text-md-start col-md-9 p-4">
                     <h3>A Focus on Health and Wellness</h3>
                     <br />
                     <p class="copy">As we reflect on our journey, we are inspired by the individuals who share our passion for embracing life to the fullest. At the heart of TRAC's mission is the belief that everyone should have the opportunity to lead healthier, more active lives.</p>
@@ -105,11 +141,11 @@
         </div>
 
         <div class="container content-about">
-            <div class="d-flex flex-row-reverse p-3 align-items-center justify-content-md-between">
-                <div class="col-md-3 p-4">
+            <div class="row d-md-flex flex-row-reverse p-3 align-items-center justify-content-md-between">
+                <div class="col-8 mx-auto col-md-3 p-4">
                     <img class="img-fluid" src="images/about-icon-4.png">
                 </div>
-                <div class="col-md-9 p-4">
+                <div class="col-12 text-center text-md-start col-md-9 p-4">
                     <h3>Connecting with Fitness Enthusiasts</h3>
                     <br />
                     <p class="copy">Our diverse collection of watches is tailored to meet the unique needs of fitness enthusiasts and those on a journey towards a healthier lifestyle.</p>
@@ -119,11 +155,11 @@
         </div>
 
         <div class="container content-about">
-            <div class="d-flex flex-row p-3 align-items-center justify-content-md-between">
-                <div class="col-md-3 p-4">
+            <div class="row d-md-flex flex-row p-3 align-items-center justify-content-md-between">
+                <div class="col-8 mx-auto col-md-3 p-4">
                     <img class="img-fluid" src="images/about-icon-5.png">
                 </div>
-                <div class="col-md-9 p-4">
+                <div class="col-12 text-center text-md-start col-md-9 p-4">
                     <h3>Empowering Your Journey</h3>
                     <br />
                     <p class="copy">TRAC watches aren't just timepieces; they're your partners in achieving your health and fitness goals. </p>
@@ -136,36 +172,19 @@
             <h1>Our Founders</h1>
         </div>
 
-
-
-
-
-
         <div class="container content-about">
-            <div class="row justify-content-between pt-5 ">
-                <div class="col-md-2"></div>
-                <div class="col-md-3">
-                    <img class="img-fluid rounded-5 " src="images/founder-1.png">
+            <div class="row justify-content-center justify-content-md-between pt-5">
+                <div class="col-0 col-md-2"></div>
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid rounded-5" src="images/founder-1.png">
+                    <h3 class=" text-center fw-light pt-3 pb-5">Dr. Min Kao</h3>
                 </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-3">
+                <div class="col-0 col-md-2"></div>
+                <div class="col-6 col-md-3">
                     <img class="img-fluid rounded-5" src="images/founder-2.png">
+                    <h3 class="text-center fw-light pt-3 pb-5">Gary Burrell</h3>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
-        </div>
-
-        <div class="container content-about">
-            <div class="row justify-content-between pt-5 pb-5 " >
-                <div class="col-md-2"></div>
-                <div class="col-md-3 text-center" >
-                    <h3 style="font-weight: 300;">Dr. Min Kao</h3>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-3 text-center">
-                    <h3 style="font-weight: 300;">Gary Burrell</h3>
-                </div>
-                <div class="col-md-2"></div>
+                <div class="col-0 col-md-2"></div>
             </div>
         </div>
 
