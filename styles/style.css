@@ -106,7 +106,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .product1-order-info{
     padding-left: 80px; 
-
 }
 
 
@@ -151,9 +150,17 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
 }
+
+.accordion-header *, .accordion-body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+table tr td, table tr th {
+    background-color: transparent!important;
+}
  
 
-.FAQ-Ques,
+/* .FAQ-Ques,
 .FAQ-Ques p {
         font-size: 20px;
         font-weight: 500;
@@ -167,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: 300;
         font-family: 'DM Sans', sans-serif;
         color: #000000 ;
-}
+} */
 
 .custom-table {
 

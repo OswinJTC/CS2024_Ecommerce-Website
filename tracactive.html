@@ -74,17 +74,17 @@
 
 
         <!-- Product Order Section -->
-        <div class="container pb-5 px-5">
+        <div class="container pb-5 px-2 px-lg-5">
             <div class="row align-items-center bg-mode-darken py-5 rounded-5">
-                <div class="col-md-6 product1-order-image">
-                    <img id="productImage" src="images/product-images/product2-black.png">
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="img-fluid" id="productImage" src="images/product-images/product2-black.png">
                 </div>
-                <div class="col-md-6 product1-order-info">
+                <div class="col-12 col-lg-5 text-center text-lg-start">
                     <h2 id="model">TracActive</h2>
                     <br />
                     <h3 id="price" class="mb-4">SGD 399</h3>
                     
-                    <div class="form-group my-2 pb-2" style="width: 250px">
+                    <div class="form-group my-2 pb-2 mx-auto mx-lg-0" style="width: 250px">
                         <label class="label-text" for="colorSelect">
                             <h4>Color</h4>
                         </label>
@@ -97,11 +97,11 @@
                         </select>
                     </div>
 
-                    <div class="form-group my-3 pt-2">
+                    <div class="form-group my-3 pt-2 mx-auto mx-lg-0">
                         <label class="label-text" for="quantitySelect">
                             <h4>Quantity</h4>
                         </label>
-                        <div class="qty-selector input-group">
+                        <div class="qty-selector input-group d-flex justify-content-center justify-content-lg-start">
                             <button id="minus" style="width: 50px;" class="btn btn-primary text-center p-2">-</button>
                             <input id="quantity" name="quantity" class="border-0" style="text-align: center; width: 152px;" type="text" value="1" readonly>
                             <button id="plus" style="width: 50px;" class="btn btn-primary text-center p-2">+</button>
@@ -116,17 +116,16 @@
     
 
         <!-- Product Description Section -->
-        <div class="container p-5">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-8 spotify-text">
+        <div class="container p-0 p-lg-5">
+            <div class="row d-lg-flex flex-row-reverse p-2 p-lg-3 align-items-center justify-content-center">
+                <div class="col-8 col-lg-4 justify-content-between">
+                    <img class="img-fluid" src="images/spotify.png" alt="Spotify">
+                </div>
+                <div class="col-12 mx-auto col-lg-8 text-center text-lg-start spotify-text">
                     <h1 class="mt-4">Connect to Your Favourite Music App</h1>
                     <br />
                     <p>Spotify has always been available on your phone, your computer and your tablet. Now you can get it on your compatible Garmin watch with Spotify Premium.</p>
                     <p>There are millions of tracks on Spotify, so the right music is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you. You can also browse through the music collections of friends, artists and celebrities, or create a radio station and just sit back.</p>
-                </div>
-            
-                <div class="col-md-4 text-right">
-                    <img src="images/spotify.png" width="100%" alt="Spotify">
                 </div>
             </div>
         </div>
@@ -162,24 +161,23 @@
             <h1 class="text-center">Specifications</h1>
         </div>
 
-        <div class="container pb-5" style = "padding-left: 50px; padding-right: 50px; ">
+        <div class="container pb-5 mx-5">
         
-            <table class="table table-bordered" style="color: white; background-color: transparent;">
+            <table class="table table-bordered border-white">
                 <tr>
-                    <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;  ">
-                        <h5>Daily features</h5>
+                    <td class="p-2 text-center align-middle col-md-4">
+                        <h5 class="my-1">Daily features</h5>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
-                        <h5>Safety features</h5>
+                    <td class="p-2 text-center align-middle col-md-4">
+                        <h5 class="my-1">Safety features</h5>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;  ">
-                        <h5>General</h5>
+                    <td class="p-2 text-center align-middle col-md-4">
+                        <h5 class="my-1">General</h5>
                     </td>
                 </tr>
                 <tr>
-
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
                             <li>Weather</li>
                             <li>Calendar</li>
                             <li>Messages</li>
@@ -188,42 +186,37 @@
                             <li>Smart Lock</li>
                         </ul>
                     </td>
-
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
                             <li>LiveTrack</li>
                             <li>Incident Detection</li>
                             <li>Live Event Sharing</li>
                             <li>Assistance</li>
                         </ul>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
-                            <li>Screen Size: 1.41 inches - 320 x 320 pixels</li>
-                            <li>Weight: 38g</li>
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
+                            <li>1.04&quot; - 208 x 208 pixels</li>
+                            <li>Weight: 37g</li>
                             <li>Strap Material: silicone</li>
-                            <li>Physical Size: 40.6 x 37.0 x 11.1 mm (Fits wrists with a circumference of 125-190 mm)</li>
+                            <li>Physical Size: 42 x 42 x 11.6 mm (Fits wrists with a circumference of 126-203mm)</li>
                         </ul>
-                        
-
-
-
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;  ">
-                        <h5>Health Statistics</h5>
+                    <td class="p-2 text-center align-middle">
+                        <h5 class="my-1">Health Statistics</h5>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
-                        <h5>Connectivity</h5>
+                    <td class="p-2 text-center align-middle">
+                        <h5 class="my-1">Connectivity</h5>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center; ">
-                        <h5>Ratings</h5>
+                    <td class="p-2 text-center align-middle">
+                        <h5 class="my-1">Ratings</h5>
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
                             <li>Heart rate</li>
                             <li>Respiration rate</li>
                             <li>Fitness Age</li>
@@ -233,43 +226,39 @@
                             <li>Menstrual Tracking</li>
                         </ul>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
                             <li>Smart Notifications</li>
                             <li>Music (Spotify, Deezer, Apple Music)</li>
                             <li>iPhone & Android</li>
                             <li>Find my phone & watch</li>
                         </ul>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
                             <li>Battery Life:</li>
                             <ul>
-                                <li>Battery Saver Smartwatch</li>
-                                <li>mode: 12 days</li>
-                                <li>GPS-Only GNSS mode: 26hrs</li>
-                                <li>All-System GNSS mode: 20hrs</li>
+                                <li>Normal Mode: 2 weeks</li>
+                                <li>GPS mode: 20 hours</li>
                             </ul>
                             <li>Water Rating: 5 ATM</li>
                         </ul>
-
-
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 33.33%; height: 30px; border: 1px solid white; background-color: transparent; text-align: center;">
-                        <h5>Fitness Tracking</h5>
+                    <td class="p-2 text-center align-middle">
+                        <h5 class="my-1">Fitness Tracking</h5>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;">
-                        <h5>Training Metrics</h5>
+                    <td class="p-2 text-center align-middle">
+                        <h5 class="my-1">Training Metrics</h5>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; text-align: center;">
-                        <h5>Workout Features</h5>
+                    <td class="p-2 text-center align-middle">
+                        <h5 class="my-1">Workout Features</h5>
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
                             <li>Running indoors/outdoors</li>
                             <li>Biking indoors/outdoors</li>
                             <li>Pool swimming, cardio</li>
@@ -278,8 +267,8 @@
                             <li>HIIT, pilates, and yoga</li>
                         </ul>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
                             <li>VO2 max</li>
                             <li>Recovery Time</li>
                             <li>Race Predictor</li>
@@ -288,12 +277,12 @@
                             <li>Step Counter</li>
                         </ul>
                     </td>
-                    <td style="width: 33.33%; border: 1px solid white; background-color: transparent; color: white; vertical-align: middle;">
-                        <ul style="padding-left: 60px;">
-                            <li>Interval Workouts</li>
-                            <li>PacePro - helps you create a pacing plan</li>
-                            <li>Suggested workouts</li>
-                            <li>Audio Prompts via the TRAConnect app</li>
+                    <td class="py-2 px-5 text-left align-middle text-white">
+                        <ul class="my-2">
+                            <li>Smart Notifications</li>
+                            <li>Music (Spotify, Deezer, Apple Music)</li>
+                            <li>iPhone & Android</li>
+                            <li>Find my phone & watch</li>
                         </ul>
                     </td>
                 </tr>

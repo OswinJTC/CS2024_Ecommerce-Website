@@ -17,7 +17,7 @@ function deleteCartItem() {
     document.addEventListener('click', (e) => {
         const splitID = e.target.id.split('_');
         if (splitID[0] === 'delete') {
-            cartArray.splice(splitID[1], splitID[1]);
+            cartArray.splice(splitID[1], 1);
             localStorage.setItem('cart', JSON.stringify(cartArray));
             window.location.href = 'cart.html';
         }
@@ -25,6 +25,7 @@ function deleteCartItem() {
 }
 
 window.onload = function() {
+    toggleCartIndicator();
     toggleQuantities();
     deleteCartItem();
 }
