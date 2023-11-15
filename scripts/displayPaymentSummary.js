@@ -44,7 +44,7 @@ document.write('</div>');
 document.write('<button class="btn btn-secondary my-3" type="submit" id="makePayment" style="width: 100%;">Proceed to Pay</button>');
 document.write('<div class="form-check">');
 document.write('<input class="form-check-input" type="checkbox" name="pp-agree" value="1" required>');
-document.write('<label class="form-check-label text-white" for="pp-agree">By clicking on this, you are agreeing to the <a class="text-white" href="privacypolicy.html">Privacy Policy</a>.</label>');
+document.write('<label class="form-check-label text-white" for="pp-agree">By clicking on this, you are agreeing to the <a class="text-white" href="privacy.html">Privacy Policy</a>.</label>');
 document.write('</form>');
 document.write('</div>');
 document.write('</div>');
