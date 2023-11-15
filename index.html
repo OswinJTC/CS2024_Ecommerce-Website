@@ -28,6 +28,15 @@
         
     </head>
     <body>
+        <div id="emptyCartToast" class="toast align-items-center position-fixed bottom-0 end-0 m-4" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Cannot checkout, your cart is empty!
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+
         <nav class="navbar navbar-dark navbar-expand-lg py-4">
             <div class="container">
                 <a class="col-3 col-md-1 text-left navbar-brand text-decoration-none" href="index.html">
@@ -238,7 +247,8 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="scripts/productListener.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="scripts/cartInit.js"></script>
     </body>
 </html>
 

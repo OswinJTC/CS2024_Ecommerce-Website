@@ -61,9 +61,9 @@
 }
 
 .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:active:focus {
-    background-color: white;
+    background-color: darkgrey;
     color: black;
-    border-color: white;
+    border-color: darkgrey;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
