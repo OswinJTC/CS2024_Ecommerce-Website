@@ -29,6 +29,25 @@
         
     </head>
     <body>
+        <script type="text/javascript" src="scripts/emptyCartRedirect.js"></script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Payment Successful</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Your TRAC products will be on their way to you shortly.
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html"><button type="button" class="btn btn-dark">Back to home</button></a>
+                </div>
+            </div>
+            </div>
+        </div>
 
         <nav class="navbar navbar-dark navbar-expand-lg py-4">
             <div class="container">
@@ -197,6 +216,7 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="scripts/cartInit.js"></script
+        <script type="text/javascript" src="scripts/cartInit.js"></script>
+        <script type="text/javascript" src="scripts/payment.js"></script>
     </body>
 </html>
