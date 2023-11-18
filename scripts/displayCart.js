@@ -4,7 +4,7 @@ if (cartArray.length === 0) {
     document.write('<h1>Cart is empty</h1>');
 } else {
     for (let item in cartArray) {
-        document.write('<div class="row d-flex border rounded-5 py-3 mb-4">');
+        document.write('<div class="row d-md-flex border rounded-5 py-3 mb-4">');
         document.write('<div class="col-md-5 align-self-center">');
         document.write('<img class="img-fluid" src="' + cartArray[item]._image + '">');
         document.write('</div>');
@@ -23,4 +23,9 @@ if (cartArray.length === 0) {
         document.write('</div>');
         document.write('</div>');
     }
+
+    document.write('<div class="form-check mt-3 justify-content-left">');
+    document.write('<input class="form-check-input" id="buyTracshield" type="checkbox" name="buy-tracshield" value="1" required>');
+    document.write('<label class="form-check-label text-white" for="pp-agree">Add <a class="text-white" href="tracshield.html">TracShield Warranty</a> at $99 for all your products</label>');
+    document.write('</div>');
 }

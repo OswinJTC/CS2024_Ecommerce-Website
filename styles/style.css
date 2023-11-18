@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(170deg, rgba(12,9,63,1) 5%, rgba(79,18,15,1) 50%, rgba(12,9,63,1) 95%) no-repeat;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p, i, b, strong, small {
@@ -177,8 +178,12 @@ table tr td, table tr th {
 } */
 
 .custom-table {
-
     display: flex;
     justify-content: center;
     height: 100%;
+}
+
+.tracshield-content {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
 }
