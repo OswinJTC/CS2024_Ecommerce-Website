@@ -202,6 +202,10 @@ table tr td, table tr th {
     color: #212529;
 }
 
+.text-white-xs-dark {
+    color: white;
+}
+
 #about-button-xs {
     display: none;
 }
@@ -216,6 +220,10 @@ table tr td, table tr th {
         color: white;
     }
 
+    .text-white-xs-dark {
+        color: #212529;
+    }
+
     #about-button-xs {
         display: block;
     }
@@ -223,4 +231,9 @@ table tr td, table tr th {
     #about-button {
         display: none;
     }
+}
+
+.navbar-darken {
+    background: rgba(0, 0, 0, .7);
+    background-blend-mode: darken;
 }
