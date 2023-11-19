@@ -187,3 +187,40 @@ table tr td, table tr th {
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
 }
+
+.banner2 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.xs-darken {
+    filter: brightness(1.0);
+}
+
+.text-dark-xs-white {
+    color: #212529;
+}
+
+#about-button-xs {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    .xs-darken {
+        filter: brightness(0.6);
+        visibility: visible;
+    }
+
+    .text-dark-xs-white {
+        color: white;
+    }
+
+    #about-button-xs {
+        display: block;
+    }
+
+    #about-button {
+        display: none;
+    }
+}
