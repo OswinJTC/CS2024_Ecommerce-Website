@@ -40,7 +40,7 @@
         
     </head>
     <body>
-        <nav class="navbar navbar-dark navbar-expand-lg py-4">
+        <nav style="background-color: #060425" class="navbar navbar-dark navbar-expand-lg py-4 fixed-top">
             <div class="container">
                 <a class="col-3 col-md-1 text-left navbar-brand text-decoration-none" href="index.html">
                     <h1 class="logo">TRAC</h1>
@@ -48,7 +48,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="col-3 col-md-1 text-end navbar-right order-lg-last">
+                <div class=" col-3 col-md-1 text-end navbar-right order-lg-last">
                     <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
                     <span id="cartFilled" class="fa-cart-filled rounded-circle"></span>
                 </div>
@@ -76,6 +76,9 @@
                 </div>
             </div>
         </nav>
+
+        <!-- this div accounts for the nav's height -->
+        <div style="height: 100px"></div>
 
         <div>
             <img style="width: 100vw" src="images/product-images/all-products.png">
