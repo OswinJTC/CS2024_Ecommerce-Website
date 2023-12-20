@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# CS2024_Ecommerce-Website
-=======
-# TRAC.
+# TRAC
 
-A smart watch / fitness tracker company.
->>>>>>> newbranch
+ A smart watch / fitness tracker company.
