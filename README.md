@@ -5,7 +5,7 @@ Technologies Used: HTML, CSS, Bootstrap, VS Code
 
 Skills Demonstrated: UI/UX Design, Problem-solving critical thinking and Teamwork
 
-{https://www.singaporewebdevelopment.com/cs2024/tut02grp1/}
+https://www.singaporewebdevelopment.com/cs2024/tut02grp1/
 
 <img width="1440" alt="Screenshot 2023-12-20 at 6 52 04 PM" src="https://github.com/OswinJTC/CS2024_Ecommerce-Website/assets/129711775/da6045d4-cc6b-4047-88a2-4ff2f593b8f7">
 <img width="1440" alt="Screenshot 2023-12-20 at 6 53 19 PM" src="https://github.com/OswinJTC/CS2024_Ecommerce-Website/assets/129711775/9859c3c0-ddbc-45f9-83d8-f43bbd18394b">
